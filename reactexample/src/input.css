@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn{
+    @apply text-orange-400 bg-black;
+}

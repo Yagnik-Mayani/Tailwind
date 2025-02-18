@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply mx-4 cursor-pointer inline-block hover:text-black;
+}
+

@@ -1,0 +1,38 @@
+npm init -y   // This initializes the directory  as a NodeJs Project
+npm install -D tailwindcss postcss autoprefixer vite //install required packages
+npx tailwindcss init -p //config file banse 2
+install Extension in vs code "tailwind css intellisence" --> Tenathi Tailwind ma kai kai property che te class maa type karo to show thase;
+tailwind.config.js Maa --> Content: ["*"] //tenathi All files ma tailwindcss class use thay
+1 css file create karvani ex: -- input.css in add -->@tailwind base;
+                                                     @tailwind components;
+                                                     @tailwind utilities;
+													 --> This file include as a link in html page;
+package.json in --> "scripts":{ 
+                       "start": "vite"
+					   },
+npm run start --> tenathi local host ma file run thase
+                     OR
+In problem this localhost page can't be found to --> npx serve
+
+@apply directive input.css use mate --> npx tailwindcss -i ./input.css -o ./output.css --watch --> tene install terminal ma karvathi koi bhi class input.css ma apu and tema @apply directive apu to te apply karse te class maa 
+                                                    OR
+--> And Always terminal ma (npx tailwindcss -i ./input.css -o ./output.css --watch )Aa command running revo joiye because suppose @apply directive ni andar koi changes kariye to This command Rebuilding karse means restart thase so Aaa command Terminal maa run rakhvano
+
+--> npx tailwindcss init confYagnikn --full -->tenathi tailwind ni badhi configuration show thase and tema changes karva mate tailwind.config.js ma extend ma je add karvu hoy te configuration file ni property nu name extend ni anadar lakhine add kari sakay
+
+
+                                                                       React JS
+
+1.npm install -D tailwindcss@3 postcss autoprefixer //install required packages
+2.npx tailwindcss init -p //config file banse 2
+tailwind.config.js Maa --> Content: ["*"] //tenathi All files ma tailwindcss class use thay
+1 css file create karvani ex: -- input.css in add -->@tailwind base;
+                                                     @tailwind components;
+                                                     @tailwind utilities;
+													 --> This file include as a link in html page;
+@apply directive input.css use mate --> npx tailwindcss -i ./src/input.css -o ./src/output.css --watch --> tene install terminal ma karvathi koi bhi class input.css ma apu and tema @apply directive apu to te apply karse te class maa												   
+                                                   OR
+--> And Always terminal ma (npx tailwindcss -i ./src/input.css -o ./src/output.css --watch )Aa command running revo joiye because suppose @apply directive ni andar koi changes kariye to This command Rebuilding karse means restart thase so Aaa command Terminal maa run rakhvano
+
+--> npx tailwindcss init confYagnikn --full -->tenathi tailwind ni badhi configuration show thase and tema changes karva mate tailwind.config.js ma extend ma je add karvu hoy te configuration file ni property nu name extend ni anadar lakhine add kari sakay
+														   
