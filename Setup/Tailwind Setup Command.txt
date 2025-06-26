@@ -25,10 +25,12 @@ In problem this localhost page can't be found to --> npx serve
 
 1.npm install -D tailwindcss@3 postcss autoprefixer //install required packages
 2.npx tailwindcss init -p //config file banse 2
-tailwind.config.js Maa --> Content: ["*"] //tenathi All files ma tailwindcss class use thay
+tailwind.config.js Maa --> Content: ["*"] //tenathi All files ma tailwindcss class use thay  OR Content: ["./src/**/*.{js,jsx,ts,tsx}"]
 1 css file create karvani ex: -- input.css in add -->@tailwind base;
                                                      @tailwind components;
                                                      @tailwind utilities;
+
+After Terminal Ma farithi npm start karvanu off karine
 													 --> This file include as a link in html page;
 @apply directive input.css use mate --> npx tailwindcss -i ./src/input.css -o ./src/output.css --watch --> tene install terminal ma karvathi koi bhi class input.css ma apu and tema @apply directive apu to te apply karse te class maa												   
                                                    OR
